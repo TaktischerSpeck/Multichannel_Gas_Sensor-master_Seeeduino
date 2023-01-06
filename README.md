@@ -5,7 +5,7 @@ There is a compatibility problem because of the normal Library is for the Arduin
 
 I did the following:
 
-Replaced "Serial" with "SerialUSB" 
+Replaced `Serial` with `SerialUSB` 
 In BOTH `MutichannelGasSensor::get_addr_dta` functions, you need to insert a `delay(1)` between `Wire.endTransmission();` and `Wire.requestFrom(i2cAddress, 2);`
 
 I already did this in this Library
